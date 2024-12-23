@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane prefHeight="610.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CalendarController">
+   <content>
+      <VBox prefHeight="600.0" prefWidth="1000.0">
+         <children>
+            <AnchorPane fx:id="titlesAnchor" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="1000.0">
+               <children>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutY="100.0" prefHeight="40.0" prefWidth="150.0" text="חוק תנין">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="150.0" layoutY="100.0" prefHeight="40.0" prefWidth="150.0" text="חוק לבנה">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="300.0" layoutY="100.0" prefHeight="40.0" prefWidth="150.0" text="חוק חמה">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="450.0" layoutY="100.0" prefHeight="40.0" prefWidth="150.0" text="מקום מאורות">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="600.0" layoutY="100.0" prefHeight="40.0" prefWidth="150.0" text="רגע החיבור">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="textFieldData" alignment="CENTER" editable="false" focusTraversable="false" layoutX="750.0" layoutY="100.0" prefHeight="40.0" prefWidth="250.0">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </TextField>
+                  <ComboBox fx:id="monthCombo" editable="true" layoutX="305.0" layoutY="44.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#linesCalc" onKeyPressed="#keyPressed" prefWidth="150.0" promptText="חודש" />
+                  <ComboBox fx:id="yearCombo" editable="true" layoutX="545.0" layoutY="44.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#linesCalc" onKeyPressed="#keyPressed" prefWidth="150.0" promptText="שנה" />
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutY="140.0" prefHeight="30.0" prefWidth="50.0" text="דקה">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="50.0" layoutY="140.0" prefHeight="30.0" prefWidth="50.0" text="מעלה">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="100.0" layoutY="140.0" prefHeight="30.0" prefWidth="50.0" text="מזל">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="150.0" layoutY="140.0" prefHeight="30.0" prefWidth="50.0" text="דקה">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="200.0" layoutY="140.0" prefHeight="30.0" prefWidth="50.0" text="מעלה">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="250.0" layoutY="140.0" prefHeight="30.0" prefWidth="50.0" text="מזל">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="300.0" layoutY="140.0" prefHeight="30.0" prefWidth="50.0" text="דקה">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="350.0" layoutY="140.0" prefHeight="30.0" prefWidth="50.0" text="מעלה">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="400.0" layoutY="140.0" prefHeight="30.0" prefWidth="50.0" text="מזל">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="450.0" layoutY="140.0" prefHeight="30.0" prefWidth="50.0" text="דקה">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="500.0" layoutY="140.0" prefHeight="30.0" prefWidth="50.0" text="מעלה">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="550.0" layoutY="140.0" prefHeight="30.0" prefWidth="50.0" text="מזל">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="600.0" layoutY="140.0" prefHeight="30.0" prefWidth="50.0" text="דקה">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="650.0" layoutY="140.0" prefHeight="30.0" prefWidth="50.0" text="שעה">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="700.0" layoutY="140.0" prefHeight="30.0" prefWidth="50.0" text="יום">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="textFieldHour" alignment="CENTER" editable="false" focusTraversable="false" layoutX="750.0" layoutY="140.0" prefHeight="30.0" prefWidth="250.0">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <AnchorPane fx:id="anchro2" layoutY="170.0" prefHeight="430.0" prefWidth="1000.0" />
+                  <ImageView fitHeight="76.0" fitWidth="123.0" layoutX="814.0" layoutY="12.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../Downloads/תמונה3.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="dataAnchor" prefHeight="430.0" prefWidth="1000.0">
+               <children>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutY="180.0" prefHeight="30.0" prefWidth="50.0" text="דקה">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="50.0" layoutY="180.0" prefHeight="30.0" prefWidth="50.0" text="שעה">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="100.0" layoutY="180.0" maxHeight="30.0" maxWidth="50.0" minHeight="30.0" minWidth="50.0" prefHeight="30.0" prefWidth="50.0" text="( )">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" focusTraversable="false" layoutX="150.0" layoutY="180.0" maxHeight="30.0" maxWidth="150.0" minHeight="30.0" minWidth="150.0" prefHeight="30.0" prefWidth="150.0" text="תיקונים">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER_RIGHT" editable="false" focusTraversable="false" layoutX="150.0" layoutY="210.0" maxHeight="30.0" maxWidth="150.0" minHeight="30.0" minWidth="150.0" prefHeight="30.0" prefWidth="150.0" text="6.     מנת שמש">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER_RIGHT" editable="false" focusTraversable="false" layoutX="150.0" layoutY="240.0" maxHeight="30.0" maxWidth="150.0" minHeight="30.0" minWidth="150.0" prefHeight="30.0" prefWidth="150.0" text="7.     מנת ירח">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER_RIGHT" editable="false" focusTraversable="false" layoutX="150.0" layoutY="270.0" maxHeight="30.0" maxWidth="150.0" minHeight="30.0" minWidth="150.0" prefHeight="30.0" prefWidth="150.0" text="8.     סך הכל">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER_RIGHT" editable="false" focusTraversable="false" layoutX="150.0" layoutY="300.0" maxHeight="30.0" maxWidth="150.0" minHeight="30.0" minWidth="150.0" prefHeight="30.0" prefWidth="150.0" text="9.     מצעדי ירח">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER_RIGHT" editable="false" focusTraversable="false" layoutX="150.0" layoutY="330.0" maxHeight="30.0" maxWidth="150.0" minHeight="30.0" minWidth="150.0" prefHeight="30.0" prefWidth="150.0" text="10.   סך תיקונים">
+                     <font>
+                        <Font name="System Bold Italic" size="13.5" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
